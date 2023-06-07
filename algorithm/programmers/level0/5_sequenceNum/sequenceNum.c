@@ -25,6 +25,17 @@ int solution(int a, int d, bool included[], size_t included_len) {
 
 
 
+// included_len은 배열 included의 길이입니다.
+int solution0(int a, int d, bool included[], size_t included_len) {
+    int answer = 0;
+
+    for(int i = 0; i < included_len; i++)
+    {
+        if(included[i]) answer += a + d * i;
+    }
+
+    return answer;
+}
 
 int main() {
     int a,d; 
