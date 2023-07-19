@@ -15,6 +15,7 @@ int main()
     }
     else if (pid == 0) { // child process
           execlp("/bin/ls", "ls", NULL);
+           printf("Line J\n"); //동작하지 않음 위의 execlp로 인해 ls로 모든게 대체됨
     }
     else { // parent process
            wait(NULL);
