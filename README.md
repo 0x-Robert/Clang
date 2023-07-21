@@ -11,7 +11,3 @@
 ## knk
 
 - knk
-
-## operatingSystem
-
-- 운영체제 시스템 공부
